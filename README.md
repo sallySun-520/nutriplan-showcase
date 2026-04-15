@@ -24,7 +24,7 @@ NutriPlan is a full-stack application that generates personalised supplement pla
 | **Backend** | Python, Django, Django REST Framework |
 | **Async Tasks** | Celery, Redis |
 | **Database** | PostgreSQL |
-| **AI** | OpenAI GPT-4o (generation + evaluation) |
+| **AI** | OpenAI API |
 | **Infrastructure** | Docker, Terraform (AWS) |
 | **Monitoring** | Prometheus, Grafana |
 
