@@ -28,20 +28,7 @@ NutriPlan is a full-stack application that generates personalised supplement pla
 | **Infrastructure** | Docker, Terraform (AWS) |
 | **Monitoring** | Prometheus, Grafana |
 
-## Architecture
-
-```
-Browser (Next.js)
-    |
-    v
-Django REST API  --->  Celery Worker  --->  OpenAI GPT-4o
-    |                      |
-    v                      v
-PostgreSQL              Redis (broker)
-    |
-    v
-Prometheus  --->  Grafana
-```
+## How It Works
 
 1. User submits a consultation order via the frontend
 2. Django validates the request, creates the order, and enqueues a Celery task
